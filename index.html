@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery3</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr style="background-color: gainsboro;">
+                <th></th>
+                <th></th>
+                <th>Filter:</th>
+                <th colspan="2" style="padding: 0;">
+                    <!-- <label for="filter1">Filter</label> -->
+                    <select name="" id="filter1">
+                        <option value="-1">--Filter--</option>
+                        <option value="os">Operating System</option>
+                        <option value="brand">Brand</option>
+                    </select>
+                </th>
+
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Operating System</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="tbody1">
+            <tr>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: gainsboro;">
+                <th colspan="4" style="padding: 0;">
+                    <input type="text" id="input1">
+                </th>
+                <th style="padding: 0;">
+                    <button id="search1">Search</button>
+                </th>
+
+            </tr>
+        </tfoot>
+    </table>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 22px;
+        }
+
+        th,
+        td {
+            padding: 5px 5px 5px 10px;
+            font-size: 20x;
+        }
+
+        #remove:active {
+            background-color: red;
+        }
+
+        select,
+        #search1 {
+            width: 100%;
+            height: 100%;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        #input1 {
+            width: 96.4%;
+            height: 100%;
+            height: 34px;
+            font-size: 20px;
+            padding-left: 2%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>
