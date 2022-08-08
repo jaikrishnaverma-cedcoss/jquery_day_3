@@ -11,16 +11,21 @@
 <body>
     <table>
         <thead>
-            <tr style="background-color: gainsboro;">
-                <th></th>
-                <th></th>
+            <tr id="headtr" style="background-color: gainsboro;">
+                <th colspan="2">
+                    <select name="" class="brand" id="filter1">
+                        <option value="-1">--Filter By Brand--</option>
+                        <!-- <option value="os">Operating System</option>
+                        <option value="brand">Brand</option> -->
+                    </select>
+                </th>
+       
                 <th>Filter:</th>
                 <th colspan="2" style="padding: 0;">
                     <!-- <label for="filter1">Filter</label> -->
-                    <select name="" id="filter1">
-                        <option value="-1">--Filter--</option>
-                        <option value="os">Operating System</option>
-                        <option value="brand">Brand</option>
+                    <select name="" class="os" id="filter2">
+                        <option value="-1">--Filter By Operating System--</option>
+                        <!-- <option value="brand">Brand</option> -->
                     </select>
                 </th>
 
